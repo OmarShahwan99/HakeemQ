@@ -1,0 +1,30 @@
+.backdrop {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+}
+.modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform :translate(-50%, -50%);
+    background-color: #fff;
+    z-index: 200;
+    padding: 20px;
+    animation: rendered ease 1s both;
+}
+
+@keyframes rendered {
+    0% {
+        top: -10%;
+        opacity: 0;
+    }
+    100% {
+        top: 50%;
+        opacity: 1;
+    }
+}

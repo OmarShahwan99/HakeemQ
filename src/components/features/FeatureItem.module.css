@@ -1,0 +1,22 @@
+.feature {
+  text-align: center;
+  transition: 0.3s;
+  padding: 20px;
+}
+.feature:hover {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+  transform: scale(1.05);
+}
+.feature img {
+  width: 90px;
+  margin: auto;
+}
+.feature h3 {
+  color: var(--primary-alt);
+  margin: 20px 0;
+  font-size: 24px;
+}
+.feature p {
+  color: #777;
+  line-height: 1.6;
+}

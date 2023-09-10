@@ -1,0 +1,26 @@
+.doctor-detail {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.doctor-detail .image {
+    max-width: 140px;
+}
+.doctor-detail .image img {
+    width: 100%;
+}
+.doctor-detail .details {
+    flex: 1;
+}
+.doctor-detail h1 {
+    margin-bottom: 10px;
+}
+.doctor-detail p {
+    margin: 5px 0;
+    color: #000;
+}
+.doctor-detail p span {
+    color: #777;
+    max-width: 200px;
+}

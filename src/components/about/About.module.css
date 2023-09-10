@@ -1,0 +1,25 @@
+.about {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.content {
+    margin-top: 60px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.content .image {
+    width: 45%;
+}
+@media (max-width: 767px) {
+    .content {
+        flex-direction: column-reverse;
+    }
+    .content .image {
+        width: 80%;
+    }
+}
+.content .image img {
+    width: 100%;
+}

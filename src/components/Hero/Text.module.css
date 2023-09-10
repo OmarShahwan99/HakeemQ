@@ -1,0 +1,36 @@
+.text {
+    flex-basis: 50%;
+}
+@media (max-width: 767px) {
+    .text {
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
+.text h1 {
+    font-size: 42px;
+    color: var(--primray-alt);
+}
+@media (max-width: 991px) {
+    .text h1 {
+        font-size: 35px;
+    }
+}
+.text h1 span {
+    text-decoration: underline;
+    color: var(--primary);
+}
+.text p {
+    color: #666;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+.text button {
+    background-color: var(--primary-alt);
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+}

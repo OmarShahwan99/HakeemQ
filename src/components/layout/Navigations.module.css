@@ -1,0 +1,17 @@
+.nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+@media (max-width: 767px) {
+    .nav {
+        display: none;
+    }
+}
+.nav a {
+    color: #4e4c4c;
+    transition: 0.3s;
+}
+.nav a:hover {
+    color: var(--primary);
+}

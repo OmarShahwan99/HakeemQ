@@ -1,0 +1,6 @@
+.login {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    height: 100vh;
+    background-color: var(--background);
+}

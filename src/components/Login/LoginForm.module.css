@@ -1,0 +1,80 @@
+.login {
+    max-width: 620px;
+    margin: 40px auto;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+@media (max-width: 667px) {
+    .login {
+        margin: 40px 20px;
+    }
+}
+.danger {
+    position: absolute;
+    top: 0;
+    background-color: #f4a8a8;
+    width: 100%;
+    left: 0;
+    padding: 8px;
+    color: red;
+    text-align: center;
+}
+.login form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.control label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+.control input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #aaa;
+    background-color: #f8f5f5;
+    transition: 0.3s;
+}
+.control input:focus {
+    border-color: var(--primary);
+    outline: none;
+}
+.invalid input {
+    background-color: #f89a9a;
+    border-color: red;
+}
+.invalid input:focus {
+    background-color: #e2b1b1;
+    border-color: red;
+}
+.error-text {
+    color: red;
+    margin-top: 4px;
+}
+.action {
+    margin-top: 20px;
+}
+.action button {
+    background-color: var(--primary);
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+.action button:hover {
+    background-color: var(--primary-alt);
+}
+button:disabled,
+button:disabled:hover {
+    cursor: not-allowed;
+    background-color: #ccc;
+    border-color: #ccc;
+    color: #000;
+}

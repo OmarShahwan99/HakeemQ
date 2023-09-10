@@ -1,0 +1,112 @@
+.profile {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.booking-modal {
+    width: calc(50% + 100px);
+    height: 70%;
+    overflow-y: scroll;
+}
+.loading-modal {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.error-modal {
+    width: calc(30% + 100px);
+}
+.booking-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: 1px solid var(--primary);
+    padding: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: var(--primary);
+    transition: 0.3s;
+    font-size: 16px;
+    animation: lighting linear 3s infinite forwards;
+}
+
+.booking-button:hover {
+    width: 240px;
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.booking-button h4 {
+    opacity: 0;
+    display: none;
+    margin-right: 5px;
+}
+
+.booking-button:hover h4 {
+    opacity: 1;
+    display: inline-block;
+}
+.msg {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.msg-content  {
+    margin: 10px 0;
+    text-align: center;
+}
+.msg-content h3 {
+    text-transform: uppercase;
+    font-size: 32px;
+}
+.msg-content p {
+    margin-top: 10px;
+}
+.icon {
+    font-size: 80px;
+}
+.success .icon {
+    color: #2c962c;
+}
+
+.danger .icon {
+    color: red;
+}
+.success h3 {
+    color: green;
+}
+.danger h3 {
+    color: red;
+}
+.actions button  {
+    padding: 8px 16px;
+    border: 1px solid var(--primary);
+    background-color: transparent;
+    color: var(--primary);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.actions button:hover {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+@keyframes lighting {
+    0% {
+        box-shadow: 0px 0px 0px 0px var(--primary);
+    }
+    25% {
+        box-shadow: 0px 0px 10px 4px var(--primary);
+    }
+    50% {
+        box-shadow: 0px 0px 20px 8px var(--primary);
+    }
+    75% {
+        box-shadow: 0px 0px 10px 4px var(--primary);
+    }
+    100% {
+        box-shadow: 0px 0px 0px 0px var(--primary);
+    }
+}

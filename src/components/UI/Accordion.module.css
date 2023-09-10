@@ -1,0 +1,28 @@
+.accordion {
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    margin-bottom: 2px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.header .icon {
+    transition: 0.3s;
+}
+.header.open .icon {
+    transform: rotate(-180deg);
+}
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.content.open {
+    height: auto;
+    max-height: 999px;
+    transition: 0.3s;
+}

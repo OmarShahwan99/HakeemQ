@@ -1,0 +1,11 @@
+.features {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    justify-content: space-around;
+    margin-top: 60px;
+}

@@ -1,0 +1,7 @@
+.title {
+    font-size: 36px;
+    color: var(--primary-alt);
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+}

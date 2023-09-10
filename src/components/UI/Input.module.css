@@ -1,0 +1,43 @@
+.control label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.control input,
+.control select,
+.control textarea {
+  width: 100%;
+  padding: 5px;
+  transition: 0.3s;
+  font-size: 15px;
+  border: 1px solid #aaa;
+  background-color: #f8f5f5;
+}
+
+.control textarea {
+  height: 95px;
+  resize: none;
+}
+
+.control input:focus,
+.control select:focus,
+.control textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.invalid input {
+  background-color: #f89a9a;
+  border-color: red;
+}
+
+.invalid input:focus {
+  background-color: #e2b1b1;
+  border-color: red;
+}
+.error-text {
+  color: red;
+  margin-top: 4px;
+}

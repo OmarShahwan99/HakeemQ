@@ -1,0 +1,21 @@
+h4 span {
+    color: var(--primary);
+}
+.available-times {
+    margin-top: 10px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.available-times span {
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--primary);
+}
+
+.available-times span.selected {
+    background-color: var(--primary);
+    color: #fff;
+}

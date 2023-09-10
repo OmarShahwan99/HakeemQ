@@ -1,0 +1,48 @@
+.bar {
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+    display: none;
+    transition: 0.3s;
+}
+.bar.clicked {
+    transform: rotate(360deg);
+}
+@media (max-width: 767px) {
+    .bar {
+        display: block;
+    }
+}
+.bar span {
+    width: calc(100% - 5px);
+    height: 3px;
+    background-color: var(--primary-alt);
+    position: absolute;
+}
+.bar span:first-child {
+    top: 10px;
+    transition: 0.3s;
+}
+.bar span:nth-child(2) {
+    top: 20px;
+    transition: 0.3s;
+}
+.bar span:last-child {
+    top: 30px;
+    transition: 0.3s;
+}
+.bar.clicked span:nth-child(2) {
+    display: none;
+}
+.bar.clicked span:first-child,
+.bar.bar.clicked span:last-child {
+    top: 20px;
+}
+.bar.clicked span:first-child {
+    transform: rotate(45deg);
+}
+.bar.clicked span:last-child {
+    transform: rotate(-45deg);
+}

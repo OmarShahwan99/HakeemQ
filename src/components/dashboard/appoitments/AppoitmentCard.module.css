@@ -1,0 +1,50 @@
+.app-card {
+    padding: 15px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+.app-card .content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.app-card h6 {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 5px;
+}
+.app-card p {
+    font-size: 17px;
+}
+.drop-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    padding: 8px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+.drop-btn:hover,
+.drop-btn.active {
+    background-color: #ddd8d8;
+}
+.drop-btn span {
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: #383838;
+    border-radius: 50%;
+}

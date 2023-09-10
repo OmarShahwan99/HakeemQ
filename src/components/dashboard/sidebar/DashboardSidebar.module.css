@@ -1,0 +1,23 @@
+.sidebar {
+    min-width: 18%;
+    background-color: var(--primary);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    transition: 0.3s;
+    gap: 60px;
+    position: relative;
+    z-index: 100;
+    box-shadow: 2px 1px 9px 0px rgb(0 0 0 / 50%);
+}
+@media (max-width: 767px) {
+    .sidebar {
+        transform: translateX(-100%);
+        position: fixed;
+    }
+    .sidebar.open {
+        transform: translateX(0);
+    }
+}

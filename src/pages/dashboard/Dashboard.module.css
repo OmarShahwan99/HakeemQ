@@ -1,0 +1,11 @@
+.dashboard {
+    display: flex;
+    background-color: var(--background);
+    min-height: 100vh;
+}
+.dashboard main {
+    flex: 1 1 0;
+}
+.welcome {
+    margin: 0 20px;
+}

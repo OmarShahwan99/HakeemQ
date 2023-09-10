@@ -1,0 +1,5 @@
+.new-doctor {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: var(--background);
+}

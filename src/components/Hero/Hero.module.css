@@ -1,0 +1,17 @@
+.hero {
+    min-height: 100vh;
+    background-color: var(--background);
+    display: flex;
+    /* padding-top: 120px; */
+}
+/* @media (max-width: 767px) {
+    .hero {
+        padding-bottom: 120px;
+    }
+} */
+.content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}

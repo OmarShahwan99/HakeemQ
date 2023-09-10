@@ -1,0 +1,60 @@
+.text {
+    width: 45%;
+}
+@media (max-width: 767px) {
+    .text {
+        width: 100%;
+        text-align: center;
+    }
+}
+.text h1 {
+    text-transform: uppercase;
+    font-size: 42px;
+}
+@media (max-width: 767px) {
+    .text h1 {
+        font-size: 32px;
+    }
+}
+.text h1 span {
+    color: var(--primary);
+}
+.text p {
+    color: #777;
+    margin: 20px 0 0;
+    line-height: 1.6;
+}
+.accordion-list {
+    margin: 20px 0;
+}
+.text .icons {
+    display: flex;
+    gap: 20px;
+}
+@media (max-width: 767px) {
+    .text .icons {
+        justify-content: center;
+    }
+}
+.text .icons li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.text .icons li .icon {
+    padding: 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: var(--primary);
+    color: #fff;
+}
+.text .icons li .icon img {
+    width: 100%;
+}
+.text .icons li span {
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--dark);
+}
